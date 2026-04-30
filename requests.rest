@@ -65,3 +65,16 @@ Content-Type: application/json
 
 ###
 GET http://localhost:3001/api/persons
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+  "name": "Mongo Test",
+  "number": "123-456789"
+}
+
+
+###
+GET http://localhost:3001/api/persons
