@@ -1,6 +1,9 @@
+require('dotenv').config()
+
 const express = require('express')
 const morgan = require('morgan')
 const cors = require('cors')
+const Person = require('./models/person')
 const app = express()
 
 app.use(cors())
@@ -38,7 +41,10 @@ let persons = [
 ]
 
 app.get('/api/persons', (request, response) => {
-  response.json(persons)
+  Person.find({}).then(persons => {
+    response.json(persons)
+  })
+    
 })
 
 app.get('/info', (request, response) => {
@@ -60,7 +66,7 @@ app.get('/api/persons/:id', (request, response) => {
     if(person){
         response.json(person)
     } else {
-        response.setHeader(404).end()
+        response.status(404).end()
     }
 })
 
@@ -69,7 +75,7 @@ app.delete('/api/persons/:id', (request, response) => {
 
     persons = persons.filter(person => person.id !== id)
 
-    responde.status(204).end()
+    response.status(204).end()
 })
 
 app.post('/api/persons', (request, response) => {
