@@ -19,7 +19,8 @@
   "homepage": "https://github.com/RogiRP/HomeWork-Sumission---Full-Stack-Open---BackEnd#readme",
   "description": "",
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "morgan": "^1.10.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
