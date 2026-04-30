@@ -5,3 +5,15 @@ DELETE http://localhost:3001/api/persons/4
 
 ###
 GET http://localhost:3001/api/persons
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+  "name": "Roger Ruz",
+  "number": "999999999"
+}
+
+###
+GET http://localhost:3001/api/persons
