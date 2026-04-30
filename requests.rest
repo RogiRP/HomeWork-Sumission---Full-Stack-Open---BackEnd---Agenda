@@ -101,7 +101,7 @@ Content-Type: application/json
 GET http://localhost:3001/api/persons
 
 ###
-PUT http://localhost:3001/api/persons/PEGA_UN_ID_VALIDO
+PUT http://localhost:3001/api/persons/
 Content-Type: application/json
 
 {

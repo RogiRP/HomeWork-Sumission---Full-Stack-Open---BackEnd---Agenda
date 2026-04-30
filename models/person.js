@@ -21,16 +21,15 @@ const personSchema = new mongoose.Schema({
     required: true
   },
   number: {
-    type: String,
-    minLength: 8,
-    required: true,
-    validate: {
-        validator: function(value) {
-                return /^\d{2,3}-\d+$/.test(value)
-            },
-            message: props => `${props.value} is not a valid phone number`
-        }
+  type: String,
+  required: true,
+  validate: {
+    validator: function(value) {
+      return /^\d{9,}$/.test(value)
     },
+    message: props => `${props.value} must have at least 9 digits`
+  }
+}
 })
 
 personSchema.set('toJSON', {
