@@ -78,3 +78,12 @@ Content-Type: application/json
 
 ###
 GET http://localhost:3001/api/persons
+
+###
+GET http://localhost:3001/api/persons
+
+###
+DELETE http://localhost:3001/api/persons/69f2dab08f033f0fe274821f
+
+###
+GET http://localhost:3001/api/persons
