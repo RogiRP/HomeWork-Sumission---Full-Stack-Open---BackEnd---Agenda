@@ -99,3 +99,12 @@ Content-Type: application/json
 
 ###
 GET http://localhost:3001/api/persons
+
+###
+PUT http://localhost:3001/api/persons/PEGA_UN_ID_VALIDO
+Content-Type: application/json
+
+{
+  "name": "Al",
+  "number": "999999"
+}
