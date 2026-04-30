@@ -87,3 +87,15 @@ DELETE http://localhost:3001/api/persons/69f2dab08f033f0fe274821f
 
 ###
 GET http://localhost:3001/api/persons
+
+###
+PUT http://localhost:3001/api/persons/69f2d81bf392a9b2e86f851e
+Content-Type: application/json
+
+{
+  "name": "Roger",
+  "number": "999123187"
+}
+
+###
+GET http://localhost:3001/api/persons
