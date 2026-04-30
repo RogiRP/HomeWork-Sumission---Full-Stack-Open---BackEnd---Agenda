@@ -19,6 +19,7 @@
   "homepage": "https://github.com/RogiRP/HomeWork-Sumission---Full-Stack-Open---BackEnd#readme",
   "description": "",
   "dependencies": {
+    "cors": "^2.8.6",
     "express": "^5.2.1",
     "morgan": "^1.10.1"
   },
